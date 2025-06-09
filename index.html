@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zohdy Group System - تحميل الملفات</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #e6f4ea;
+            font-family: 'Cairo', sans-serif;
+            color: #1a3d1a;
+            min-height: 100vh;
+            padding: 40px 20px;
+            direction: rtl;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #2d6a2d;
+            text-shadow: 1px 1px 3px #a6d7a6;
+        }
+
+        .files-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .file-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .file-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 30px rgba(0, 100, 0, 0.3);
+        }
+
+        .file-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #2a5d2a;
+        }
+
+        .file-desc {
+            flex-grow: 1;
+            font-size: 1rem;
+            color: #3a6a3a;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .download-btn {
+            text-decoration: none;
+            background: linear-gradient(90deg, #34b233, #228b22);
+            color: white;
+            font-weight: 600;
+            padding: 14px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(34, 139, 34, 0.6);
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(90deg, #228b22, #34b233);
+            box-shadow: 0 12px 30px rgba(34, 139, 34, 0.9);
+            transform: scale(1.05);
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 5px 15px rgba(34, 139, 34, 0.5);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .file-title {
+                font-size: 1.3rem;
+            }
+
+            .download-btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zohdy Group System</h1>
+    <div class="files-container">
+
+        <div class="file-card">
+            <div class="file-title">الملف الأول - دليل المستخدم</div>
+            <div class="file-desc">هذا الملف يحتوي على دليل المستخدم التفصيلي لمنتجنا.</div>
+            <a href="https://1drv.ms/x/c/9882bfe8f3b2cf13/EezJD87MLh5HhGcW47XIDkABtz6GwElFgaPZcJf5AoGn8w?e=Te1jUL"
+                target="_blank" rel="noopener noreferrer" class="download-btn" download>تحميل الملف</a>
+        </div>
+
+        <div class="file-card">
+            <div class="file-title">الملف الثاني - تقرير الأداء</div>
+            <div class="file-desc">تقرير الأداء المالي للفصل الحالي.</div>
+            <a href="https://drive.google.com/uc?export=download&id=FILE_ID_2" target="_blank" rel="noopener noreferrer"
+                class="download-btn" download>تحميل الملف</a>
+        </div>
+
+        <div class="file-card">
+            <div class="file-title">الملف الثالث - عرض المشروع</div>
+            <div class="file-desc">عرض تقديمي كامل عن المشروع وخططه المستقبلية.</div>
+            <a href="https://drive.google.com/uc?export=download&id=FILE_ID_3" target="_blank" rel="noopener noreferrer"
+                class="download-btn" download>تحميل الملف</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
